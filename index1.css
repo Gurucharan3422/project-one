@@ -1,0 +1,329 @@
+* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: hsl(257, 7%, 63%);
+}
+
+/* Navbar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: white;
+}
+
+header h1 {
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: hsl(257, 7%, 63%);
+  text-decoration: none;
+}
+
+.auth-buttons button {
+  background: none;
+  border: none;
+  color: hsl(257, 7%, 63%);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.signup {
+  background-color: hsl(180, 66%, 49%);
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 50px 10%;
+  /* background-color: hsl(257, 27%, 26%); */
+  color: white;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  color: #888;
+}
+
+.get-started {
+  padding: 10px 20px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Shorten Link Section */
+.shorten-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* CSS for the Shorten Link Section */
+}
+.shorten-link input {
+  padding: 10px;
+  border: none;
+  width: 60%;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.shorten-link button {
+  padding: 10px 20px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+}
+
+/* Advanced Statistics Section */
+.statistics {
+  text-align: center;
+  padding: 50px 10%;
+}
+
+.statistics h3 {
+  font-size: 2em;
+  color: hsl(257, 27%, 26%);
+  margin-bottom: 20px;
+}
+
+.stat-cards {
+  display: flex;
+  flex-direction: horizontal;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 20px;
+  position: relative;
+   
+
+}
+
+.stat-card {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  
+  }
+
+.stat-card h4 {
+  color: hsl(257, 27%, 26%);
+}
+
+
+/* Footer */
+footer {
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+  padding: 30px 10%;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-section img {
+    width: 200px;  /* Adjust as needed */
+    height: auto;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  /* Space between sections */
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .login-signup {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-signup:hover {
+    background-color: #0056b3;
+  }
+
+
+  .stat-cards.logo {
+    position: absolute;
+    top: -50px;  /* Moves the logo above the section */
+    left: 50%;
+    transform: translateX(-50%);  /* Centers the logo horizontally */
+    width: 120px;  /* Adjust width as per the desired logo size */
+    height: auto;  /* Keeps the aspect ratio intact */
+}
+
+
+signup-button {
+    background-color: #007bff;  /* Blue background color */
+    color: white;  /* White text color */
+    padding: 10px 20px;  /* Padding for size */
+    font-size: 16px;  /* Font size */
+    border: none;  /* Removes default border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Shows pointer cursor on hover */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.signup-button:hover {
+    background-color: #0056b3;  /* Darker blue when hovering */
+}
+
+/* Style for the "Boost your link today" box */
+.boost-box {
+    background-color: purple;  /* Light gray background */
+    border: 2px solid #007bff;  /* Blue border */
+    padding: 40px;  /* Padding for spacing inside the box */
+    text-align: center;  /* Centers the text */
+    margin-top: 30px;  /* Space from the previous section */
+    border-radius: 8px;/* Rounded corners */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); 
+}
+
+.boost-box p {
+    font-size: 18px;  /* Larger text for better visibility */
+    color: white;  /* Blue color for the text */
+    font-weight: bold;  /* Bold text */
+    margin: 0;  /* Remove default margin */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;              /* Display items in a horizontal row */
+    justify-content: space-around; /* Space items evenly */
+    gap: 20px;  /* Optional space between headings */
+    padding: 20px; /* Padding around the container */
+    
+    
+}
+
+.heading {
+    flex: 1;  /* Each heading will take equal space */
+    text-align: center;  /* Center the text inside each heading */
+}
+
+.footer-content h3 {
+    font-size: 24px;  /* Adjust heading size */
+    font-weight: bold;  /* Make the text bold */
+    margin: 0;  /* Remove default margin */
+}
+
+
+
+/* Position the icons in the corners */
+.facebook {
+    top: 10px;
+    left: 10px;  /* Top-left corner */
+}
+
+.instagram {
+    top: 10px;
+    right: 10px; /* Top-right corner */
+}
+
+.twitter {
+    bottom: 10px;
+    left: 10px;  /* Bottom-left corner */
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #888;
+}
+.footer-content ul {
+           
+           list-style-type: none;
+           padding: 0px;
+}
+
+.footer-content ul li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#gc-button {
+  background-color: rgb(0, 255, 221);
+  font-weight: bold;
+
+}
